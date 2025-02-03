@@ -41,6 +41,6 @@ public class WAVELERP : MonoBehaviour
             direction = 1f;
         }
         transform.position = Vector2.Lerp(start.position, end.position, curve.Evaluate(t));
-        t += randommovespeed * direction;
+        t += randommovespeed * direction; //update the t value, only this time with the randommovespeed instead of 0.0001
     }
 }
