@@ -29,7 +29,7 @@ public class WAVELERP : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
-            randommovespeed = UnityEngine.Random.Range(0.001f, 0.01f);
+            randommovespeed = UnityEngine.Random.Range(0.001f, 0.01f); //once space is pressed, change the movespeed of the wave to a new random movespeed
         }
         
         if (t >= 1f)

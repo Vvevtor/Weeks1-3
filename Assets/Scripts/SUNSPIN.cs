@@ -22,7 +22,7 @@ public class SUNSPIN : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            spinSpeed += -0.1f; //rightmouse click removes 1 speed from the rotation
+            spinSpeed += -0.1f; //rightmouse click removes 1 speed from the rotation, it can even reverse it!!!
         }
 
         Vector3 spinny = transform.eulerAngles; //spinning code I did for a coding gym, hope I don't get marks off for using it, it rotates and object in place, since the rays are tethered to the circle they spin with it
