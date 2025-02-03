@@ -21,15 +21,15 @@ public class SUNLERP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (t >= 1f)
+        if (t >= 1f) //if the t value is greater than 1, reverse the direction
         {
             direction = -1f;
         }
-        if (t <= 0f)
+        if (t <= 0f) //if the t value is lower than 0, reverse the direction
         {
             direction = 1f;
         }
         transform.position = Vector2.Lerp(start.position, end.position, curve.Evaluate(t));
-        t += 0.001f * direction;
+        t += 0.001f * direction; //the transformation is updated each frame (more than once per frame in this case since I'm not using the proper time stuff), and multiplied by the direction number (basically reverse the animationcurve once it finishes)
     }
 }
